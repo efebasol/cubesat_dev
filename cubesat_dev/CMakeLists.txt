@@ -66,10 +66,3 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
 
     # Add user defined libraries
 )
-
-add_st_target_properties(${PROJECT_NAME})
-
-target_include_directories(
-    ${PROJECT_NAME} PRIVATE
-    "$<$<AND:$<CONFIG:Debug>,$<COMPILE_LANGUAGE:C>>:${PROJECT_SOURCE_DIR}/App/Inc>"
-)
