@@ -67,20 +67,9 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
     # Add user defined libraries
 )
 
-# Drivers/Custom/Src klasöründeki tüm .c dosyalarını dahil et
-file(GLOB CUSTOM_SRC
-    ${CMAKE_CURRENT_SOURCE_DIR}/Drivers/Custom/Src/*.c
-)
+add_st_target_properties(${PROJECT_NAME})
 
-# Kaynak dosyaları hedefe ekle
-target_sources(${PROJECT_NAME} PRIVATE ${CUSTOM_SRC})
-
-# Drivers/Custom/Inc klasöründeki tüm .h dosyalarını dahil et
-file(GLOB CUSTOM_HEADERS
-    ${CMAKE_CURRENT_SOURCE_DIR}/Drivers/Custom/Inc/*.h
-)
-
-# Başlık dosyalarını include dizinine ekle
-target_include_directories(${PROJECT_NAME} PRIVATE
-    ${CMAKE_CURRENT_SOURCE_DIR}/Drivers/Custom/Inc
+target_include_directories(
+    ${PROJECT_NAME} PRIVATE
+    "$<$<AND:$<CONFIG:Debug>,$<COMPILE_LANGUAGE:C>>:${PROJECT_SOURCE_DIR}/App/Inc>"
 )
