@@ -1,4 +1,4 @@
-# Install script for directory: /Users/efebasol/cubesat_dev/cmake/stm32cubemx
+# Install script for directory: /Users/efebasol/cubesat_dev/software/mainProject/cmake/stm32cubemx
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

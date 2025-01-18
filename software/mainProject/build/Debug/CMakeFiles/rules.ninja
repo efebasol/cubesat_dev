@@ -35,7 +35,7 @@ rule C_COMPILER__cubesat_dev_unscanned_Debug
 # Rule for linking C executable.
 
 rule C_EXECUTABLE_LINKER__cubesat_dev_Debug
-  command = $PRE_LINK && /opt/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc $FLAGS -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -T "/Users/efebasol/cubesat_dev/stm32f446zetx_flash.ld" --specs=nano.specs -Wl,-Map=cubesat_dev.map -Wl,--gc-sections -Wl,--start-group -lc -lm -Wl,--end-group -Wl,--print-memory-usage $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  command = $PRE_LINK && /opt/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc $FLAGS -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -T "/Users/efebasol/cubesat_dev/software/mainProject/stm32f446zetx_flash.ld" --specs=nano.specs -Wl,-Map=cubesat_dev.map -Wl,--gc-sections -Wl,--start-group -lc -lm -Wl,--end-group -Wl,--print-memory-usage $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking C executable $TARGET_FILE
   restat = $RESTAT
 
@@ -52,7 +52,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /opt/ST/STM32CubeCLT_1.17.0/CMake/bin/cmake --regenerate-during-build -S/Users/efebasol/cubesat_dev -B/Users/efebasol/cubesat_dev/build/Debug
+  command = /opt/ST/STM32CubeCLT_1.17.0/CMake/bin/cmake --regenerate-during-build -S/Users/efebasol/cubesat_dev/software/mainProject -B/Users/efebasol/cubesat_dev/software/mainProject/build/Debug
   description = Re-running CMake...
   generator = 1
 

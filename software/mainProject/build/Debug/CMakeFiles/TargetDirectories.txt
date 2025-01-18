@@ -1,5 +1,5 @@
-/Users/efebasol/cubesat_dev/build/Debug/CMakeFiles/cubesat_dev.dir
-/Users/efebasol/cubesat_dev/build/Debug/CMakeFiles/edit_cache.dir
-/Users/efebasol/cubesat_dev/build/Debug/CMakeFiles/rebuild_cache.dir
-/Users/efebasol/cubesat_dev/build/Debug/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
-/Users/efebasol/cubesat_dev/build/Debug/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir
+/Users/efebasol/cubesat_dev/software/mainProject/build/Debug/CMakeFiles/cubesat_dev.dir
+/Users/efebasol/cubesat_dev/software/mainProject/build/Debug/CMakeFiles/edit_cache.dir
+/Users/efebasol/cubesat_dev/software/mainProject/build/Debug/CMakeFiles/rebuild_cache.dir
+/Users/efebasol/cubesat_dev/software/mainProject/build/Debug/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+/Users/efebasol/cubesat_dev/software/mainProject/build/Debug/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir
